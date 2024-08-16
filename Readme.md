@@ -1,4 +1,4 @@
-# Credential Manager
+# Password Manager
 
 ## Pre-requisites
 
@@ -45,29 +45,29 @@ python setup.py bdist_wheel && cd dist && pip install pwd_mgr-1.1-py3-none-any.w
 Configure the tool with db details
 
 ```commandline
-cm configure
+pm configure
 ```
 
 List all the credentials
 
 ```commandline
-cm list
+pm list
 ```
 
 Save a new credential
 
 ```commandline
-cm save -w <website> -u <username> -p <password>
+pm save -w <website> -u <username> -p <password>
 ```
 
 Update a credential
 
 ```commandline
-cm update --id <id> -w <website> -u <username> -p <password>
+pm update --id <id> -w <website> -u <username> -p <password>
 ```
 
 Delete a credential
 
 ```commandline
-cm delete --id <id>
+pm delete --id <id>
 ```
