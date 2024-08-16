@@ -41,33 +41,43 @@ python setup.py bdist_wheel && cd dist && pip install pwd_mgr-1.1-py3-none-any.w
 ```
 
 ## Usage
+help
+```commandline
+pm --help
+```
+![](./documentation/images/help.png)
 
 Configure the tool with db details
 
 ```commandline
 pm configure
 ```
+![](./documentation/images/configure.png)
 
 List all the credentials
 
 ```commandline
 pm list
 ```
+![](./documentation/images/list.png)
 
 Save a new credential
 
 ```commandline
 pm save -w <website> -u <username> -p <password>
 ```
+![](./documentation/images/save.png)
 
 Update a credential
 
 ```commandline
 pm update --id <id> -w <website> -u <username> -p <password>
 ```
+![](./documentation/images/update.png)
 
 Delete a credential
 
 ```commandline
 pm delete --id <id>
 ```
+![](./documentation/images/delete.png)
